@@ -41,8 +41,8 @@ From ./data
 - activity\_labels.txt
 
 Only mean() and std() variables were extracted from the train and test data sets. Additional “Mean” angle variables were excluded for the following reasons: 
-1. they were not determined to be raw signal data, but were instead readings that were obtained by processing the original signal data
-2. and other readings within the original signal set in addition to mean() and std() were used to create the additional “Mean” values, which introduces additional data that was to be excluded from the tide data set.
+ 1. they were not determined to be raw signal data, but were instead readings that were obtained by processing the original signal data
+ 2. and other readings within the original signal set in addition to mean() and std() were used to create the additional “Mean” values, which introduces additional data that was to be excluded from the tide data set.
 
 The variables that were excluded that also included the word “Mean” were: `gravityMean`, `tBodyAccMean`, `tBodyAccJerkMean`, `tBodyGyroMean`, `tBodyGyroJerkMean`
 
