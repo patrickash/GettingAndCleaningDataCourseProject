@@ -2,12 +2,13 @@ library(plyr)
 library(dplyr)
 
 # Setup work
+# Set your working directory to the directory that contains this script.
 # setwd: ~/Documents/Workspace/R/GettingAndCleaningDataCourseProject
 ##########################################################################################
 
 setwd("~")
 rootPath        <- getwd()
-projectPath     <- "/Documents/Workspace/R/GettingAndCleaningDataCourseProject"
+projectPath     <- "/Documents/Workspace/R/GettingAndCleaningDataCourseProject"head()
 pathSegments    <- c(rootPath, projectPath)
 fullPath        <- paste(pathSegments, collapse="")
 setwd(fullPath)
@@ -67,10 +68,11 @@ names(yData) <- "Activity"
 
 names(subjectData) <- "Subject"
 
-# Loop through the column names and 
+# Grab original column names and assign it to the columnNames variable
 columnNames <- names(xData)
 len <- length(columnNames)
 
+# Loop
 for ( i in 1:len ) {
     columnNames[i] <- gsub("-std\\(\\)", "-StdDev", columnNames[i])
     columnNames[i] <- gsub("-mean\\(\\)", "-Mean", columnNames[i])
