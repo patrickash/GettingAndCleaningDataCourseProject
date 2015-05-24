@@ -14,7 +14,7 @@ For each record it is provided:
 - An identifier of the subject who carried out the experiment.
 
 ## Instruction List
-Below is a detailed description of how the [run\_analysis.R] script works to clean the raw data and output the tidy data set, [averages.txt].
+Below is a detailed description of how the [run\_analysis.R](https://github.com/unended/GettingAndCleaningDataCourseProject/blob/master/run_analysis.R) script works to clean the raw data and output the tidy data set, [averages.txt](https://github.com/unended/GettingAndCleaningDataCourseProject/blob/master/averages.txt).
 
 
 ### Step 1: Load in all the data that will be used in the analysis.
@@ -56,4 +56,4 @@ A full data set is created using `cbind` that combines all readings, activity la
 
 Readings of each signal is grouped by subject and activity. The average of each reading is taken, which results in a data frame that contains a single average value for each activity by each subject:
 
-30 subjects X 6 activities to produce 180 row. Each row contains averages for each of the 66 variables. See [CodeBook.md] for more information about each variable.
+30 subjects X 6 activities to produce 180 row. Each row contains averages for each of the 66 variables. See [CodeBook.md](https://github.com/unended/GettingAndCleaningDataCourseProject/blob/master/CodeBook.md) for more information about each variable.
