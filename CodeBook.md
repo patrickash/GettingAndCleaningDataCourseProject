@@ -53,10 +53,10 @@ The original data can be [downloaded here.](https://d396qusza40orc.cloudfront.ne
 ## Code Book
 The list of variables names with original variable names in italics, where applicable. Variable labels were modified from the original to improve readability.
 
-Subject
+Subject 
 The identifier for each subject who performed the activity for each window sample. Its range is from 1 to 30.
 
-Activity
+Activity 
 The name of the activity performed during the reading.
 
  timeBodyAcc-Mean-X _tBodyAcc-mean()-X_
