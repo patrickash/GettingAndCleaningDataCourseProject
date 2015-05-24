@@ -47,7 +47,7 @@ subjectData     <- rbind(subjectTrain, subjectTest)             ## dim: [1] 1029
 # Only get features with mean() or std() in the name
 meanStdFeatures <- grep("-(mean|std)\\(\\)", features[, 2])     ## length: 66
 
-xData           <- xData[, meanStdFeatures]                               ## dim: [1] 10299    66
+xData           <- xData[, meanStdFeatures]                     ## dim: [1] 10299    66
 
 # Assign mean and standard labels to each of the 66 columns
 names(xData)    <- features[meanStdFeatures, 2]
