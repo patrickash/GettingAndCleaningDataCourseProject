@@ -16,7 +16,7 @@ For each record it is provided:
 ## Study Design
 The data was provided through the course project assignment. 
 
-All data and related files were moved from the self-contained folder `UCI HAR Dataset` to the `data` directory [included in this repo.](https://github.com/unended/GettingAndCleaningDataCourseProject/tree/master/data)
+All data and related files were moved from the self-contained folder `UCI HAR Dataset` to the `data` directory [included in this repo.](#)(https://github.com/unended/GettingAndCleaningDataCourseProject/tree/master/data)
 
 The instruction was to
 - merge the training and test sets to create a single data set, and 
@@ -48,15 +48,22 @@ The variables that were excluded that also included the word “Mean” were: `g
 
 Test and train internal signal data were excluded.
 
-The original data can be [downloaded here.](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+The original data can be [downloaded here.](#)(https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ## Code Book
 The list of variables names with original variable names in italics, where applicable. Variable labels were modified from the original to improve readability.
 
+<<<<<<< HEAD
 **Subject**  
 The identifier for each subject who performed the activity for each window sample. Its range is from 1 to 30.
 
 **Activity**  
+=======
+Subject  
+The identifier for each subject who performed the activity for each window sample. Its range is from 1 to 30.
+
+Activity  
+>>>>>>> 1b6e7c5a7136d3a2ef5bac371accc76c18eabaa7
 The name of the activity performed during the reading.
 
 **timeBodyAcc-Mean-X** _tBodyAcc-mean()-X_  
@@ -193,5 +200,9 @@ Frequency domain body gyroscope Jerk magnitude - mean value
 **freqBodyGyroJerkMag-StdDev** _fBodyBodyGyroJerkMag-std()_  
 Frequency domain body gyroscope Jerk magnitude - standard deviation
 
+<<<<<<< HEAD
 ----
+=======
+---- 
+>>>>>>> 1b6e7c5a7136d3a2ef5bac371accc76c18eabaa7
 _NOTE: Fast Fourier Transform (FF) was applied frequency domain signals_
