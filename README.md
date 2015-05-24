@@ -47,9 +47,9 @@ Each activity numeric value in `yData` is replaced with the corresponding activi
 “Subject” is added as the column name in `subjectData`.
 
 The feature column names are modified for improved readability by looping through the column names and:
-1. Replacing mean() and std() method names with Mean and StdDev, respectively.
-2. Hungarian notation labels, t and f, are replaced with time and freq, respectively.
-3. Some field names that included duplicate “BodyBody” naming were updated to remove the second “Body” in the name.
+- Replacing mean() and std() method names with Mean and StdDev, respectively.
+- Hungarian notation labels, t and f, are replaced with time and freq, respectively.
+- Some field names that included duplicate “BodyBody” naming were updated to remove the second “Body” in the name.
 
 ### Step 6: Create a second independent tidy data set with the average of each variable for each activity and each subject.
 A full data set is created using `cbind` that combines all readings, activity label and subject performing the activity.
