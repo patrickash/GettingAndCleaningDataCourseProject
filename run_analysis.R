@@ -83,10 +83,15 @@ for ( i in 1:len ) {
 
 names(xData) <- columnNames
 
-# Step 6:
+# Step 6: Create a second independent tidy data set with the average of each variable for each
+# activity and each subject
 ##########################################################################################
 
+# Create full data set
 fullData <- cbind(xData, yData, subjectData)
+
+# Create variable averages grouped by subject and activity
 averages <- ddply(fullData, .(Subject, Activity), function(x) { colMeans(x[, 1:66]) })
 
+# Output the averages table to the root level of the working directory.
 write.table(averages, "./averages.txt", row.name = FALSE)
