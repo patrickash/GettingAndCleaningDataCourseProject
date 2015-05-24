@@ -12,10 +12,12 @@ For each record it is provided:
 - A 561-feature vector with time and frequency domain variables. 
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
+
 ## Instruction List
 Below is a detailed description of how the [run\_analysis.R] script works to clean the raw data and output the tidy data set, [averages.txt].
 
-## Step 1: Load in all the data that will be used in the analysis.
+
+### Step 1: Load in all the data that will be used in the analysis.
 The following train, test, feature and activity label data is loaded into tables using `read.table()`:
 - `xTrain` - X\_train.txt
 - `yTrain` - y\_train.txt
@@ -26,22 +28,22 @@ The following train, test, feature and activity label data is loaded into tables
 - `features` - features.txt
 - `activityLabels` - activity\_labels.txt
 
-## Step 2: Merge the training and the test sets to create one data set.
+### Step 2: Merge the training and the test sets to create one data set.
 `xData`, `yData` and `subjectData` data frames are created by row binding train and test data for x, y, and subject.
 
-## Step 3: Extract only the measurments on the mean and standard deviation for each measurement.
+### Step 3: Extract only the measurments on the mean and standard deviation for each measurement.
 Using `grep()`, a new `meanStdFeatures` vector is created from a subset of variables from `features` that only contain _-mean()_ or _-std()_ in the name. 
 
 `xData` is pruned to only contain the mean and std columns using the `meanStdFeatures` vector.
 
 The mean and standard labels are assigned to the remain columns using `meanStdFeatues`.
 
-## Step 4: Use descriptive activity names to name the activities in the data set.
+### Step 4: Use descriptive activity names to name the activities in the data set.
 Each activity numeric value in `yData` is replaced with the corresponding activity label from `activityLabels`.
 
 “Activity” is added as the column name.
 
-## Step 5: Appropriately label the data set with descriptive variable names.
+### Step 5: Appropriately label the data set with descriptive variable names.
 “Subject” is added as the column name in `subjectData`.
 
 The feature column names are modified for improved readability by looping through the column names and:
@@ -49,7 +51,7 @@ The feature column names are modified for improved readability by looping throug
 2. Hungarian notation labels, t and f, are replaced with time and freq, respectively.
 3. Some field names that included duplicate “BodyBody” naming were updated to remove the second “Body” in the name.
 
-## Step 6: Create a second independent tidy data set with the average of each variable for each activity and each subject.
+### Step 6: Create a second independent tidy data set with the average of each variable for each activity and each subject.
 A full data set is created using `cbind` that combines all readings, activity label and subject performing the activity.
 
 Readings of each signal is grouped by subject and activity. The average of each reading is taken, which results in a data frame that contains a single average value for each activity by each subject:
