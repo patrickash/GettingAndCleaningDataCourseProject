@@ -62,12 +62,12 @@ The name of the activity performed during the reading.
 timeBodyAcc-Mean-X _tBodyAcc-mean()-X_
 timeBodyAcc-Mean-Y _tBodyAcc-mean()-Y_
 timeBodyAcc-Mean-Z _tBodyAcc-mean()-Z_
-3-axial time domain body acceleration signals - mean value
+	3-axial time domain body acceleration signals - mean value
 
 timeBodyAcc-StdDev-X _tBodyAcc-std()-X_
 timeBodyAcc-StdDev-Y _tBodyAcc-std()-Y_
 timeBodyAcc-StdDev-Z _tBodyAcc-std()-Z_
-3-axial time domain body acceleration signals - standard deviation
+	3-axial time domain body acceleration signals - standard deviation
 
 timeGravityAcc-Mean-X _tGravityAcc-mean()-X_
 timeGravityAcc-Mean-Y _tGravityAcc-mean()-Y_
