@@ -47,10 +47,10 @@ subjectData     <- rbind(subjectTrain, subjectTest)             ## dim: [1] 1029
 # Only get features with mean() or std() in the name
 meanStdFeatures <- grep("-(mean|std)\\(\\)", features[, 2])     ## length: 66
 
-xData <- xData[, meanStdFeatures]                               ## dim: [1] 10299    66
+xData           <- xData[, meanStdFeatures]                               ## dim: [1] 10299    66
 
 # Assign mean and standard labels to each of the 66 columns
-names(xData) <- features[meanStdFeatures, 2]
+names(xData)    <- features[meanStdFeatures, 2]
 
 # Step 4: Use descriptive activity names to name the activities in the data set
 ##########################################################################################
@@ -58,10 +58,10 @@ names(xData) <- features[meanStdFeatures, 2]
 # No need to reorder activityLabels - it's ordered by column one value in ascending order.
 # Loop through the data and use the numeric value to pull the label in the corresponding
 # activityLabels row.
-yData[, 1] <- activityLabels[yData[, 1], 2]
+yData[, 1]      <- activityLabels[yData[, 1], 2]
 
 # Add column name "Activity" to yData
-names(yData) <- "Activity"
+names(yData)    <- "Activity"
 
 # Step 5: Appropriately label the data set with descriptive variable names
 ##########################################################################################
@@ -69,8 +69,8 @@ names(yData) <- "Activity"
 names(subjectData) <- "Subject"
 
 # Grab original column names and assign it to the columnNames variable
-columnNames <- names(xData)
-len <- length(columnNames)
+columnNames     <- names(xData)
+len             <- length(columnNames)
 
 # Loop
 for ( i in 1:len ) {
