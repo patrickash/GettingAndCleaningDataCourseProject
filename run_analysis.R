@@ -6,12 +6,12 @@ library(dplyr)
 # setwd: ~/Documents/Workspace/R/GettingAndCleaningDataCourseProject
 ##########################################################################################
 
-setwd("~")
-rootPath        <- getwd()
-projectPath     <- "/Documents/Workspace/R/GettingAndCleaningDataCourseProject"head()
-pathSegments    <- c(rootPath, projectPath)
-fullPath        <- paste(pathSegments, collapse="")
-setwd(fullPath)
+# setwd("~")
+# rootPath        <- getwd()
+# projectPath     <- "/Documents/Workspace/R/GettingAndCleaningDataCourseProject"
+# pathSegments    <- c(rootPath, projectPath)
+# fullPath        <- paste(pathSegments, collapse="")
+# setwd(fullPath)
 
 # Load in all the data that will be used in the analysis
 ##########################################################################################
