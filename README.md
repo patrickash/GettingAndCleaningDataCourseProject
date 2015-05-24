@@ -32,11 +32,11 @@ The following train, test, feature and activity label data is loaded into tables
 `xData`, `yData` and `subjectData` data frames are created by row binding train and test data for x, y, and subject.
 
 ### Step 3: Extract only the measurments on the mean and standard deviation for each measurement.
-Using `grep()`, a new `meanStdFeatures` vector is created from a subset of variables from `features` that only contain _-mean()_ or _-std()_ in the name. 
+Using `grep()`, a new `meanStdFeatures` vector is created using a subset of variables from `features` that only contain _-mean()_ or _-std()_ in the name. 
 
 `xData` is pruned to only contain the mean and std columns using the `meanStdFeatures` vector.
 
-The mean and standard labels are assigned to the remain columns using `meanStdFeatues`.
+The mean and standard labels are assigned to the remain columns using `meanStdFeatures`.
 
 ### Step 4: Use descriptive activity names to name the activities in the data set.
 Each activity numeric value in `yData` is replaced with the corresponding activity label from `activityLabels`.
