@@ -194,4 +194,4 @@ Frequency domain body gyroscope Jerk magnitude - mean value
 Frequency domain body gyroscope Jerk magnitude - standard deviation
 
 ----
-_NOTE: Fast Fourier Transform (FF) was applied frequency domain signals_
+_NOTE: Fast Fourier Transform (FFT) was applied frequency domain signals_
