@@ -2,7 +2,7 @@ library(plyr)
 library(dplyr)
 
 # Setup work
-# Set your working directory to the directory that contains this script.
+# Set the working directory to the directory that contains this script.
 # setwd: ~/Documents/Workspace/R/GettingAndCleaningDataCourseProject
 ##########################################################################################
 
